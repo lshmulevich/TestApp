@@ -1,0 +1,13 @@
+[ { "ReviewName": "Review 01", "Score": 40 },
+    { "ReviewName": "Review 02", "Score": 45 }, 
+    { "ReviewName": "Review 03", "Score": 30 },
+    { "ReviewName": "Review 04", "Score": 35 }, 
+    { "ReviewName": "Review 05", "Score": 60 },
+    { "ReviewName": "Review 06", "Score": 65 }, 
+    { "ReviewName": "Review 07", "Score": 20 },
+    { "ReviewName": "Review 08", "Score": 25 }, 
+    { "ReviewName": "Review 09", "Score": 10 },
+    { "ReviewName": "Review 10", "Score": 15 }, 
+    { "ReviewName": "Review 11", "Score": 80 }, 
+   { "ReviewName": "Review 12", "Score": 95 }
+]

@@ -1,0 +1,74 @@
+﻿<html ng-app="myApp">
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Angular Review management</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/ng-grid.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+    <script type="text/javascript" src="~/scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="~/scripts/angular.js"></script>
+    <script type="text/javascript" src="~/scripts/ng-grid.js"></script>
+    <script type="text/javascript" src="~/scripts/main.js"></script>
+</head>
+<body ng-controller="MyCtrl">
+    <div ng-show="viewReviews==true">
+        <h3>Angular Review management </h3>
+        <br />
+        <a class="btn" ng-class="btn-primary" ng-click="viewReviews=false">Add new Review</a>
+        <br />
+        <div ng-hide="gridData.length>0">
+
+            There are no Reviews yet. Please create one by clicking the link above.
+        </div>
+
+        <div ng-show="gridData.length>0 ">
+            <div class="gridStyle" ng-grid="gridOptions">
+            </div>
+
+        </div>
+    </div>
+    <div ng-show="viewReviews==false">
+        <h3>Angular Review - add new Review</h3>
+        <br />
+        <a class="btn" ng-class="btn-primary" ng-click="viewReviews=true">Back to main</a>
+        <form name="editform" class="form-horizontal">
+
+            <div class="form-group">
+                <label for="newReview.ReviewName" class="col-sm-2 control-label">Review name</label>
+                <div class="col-sm-4">
+                    <input type="text" ng-required="true" class="form-control" ng-model="newReview.ReviewName" id="newReview.ReviewName" placeholder="Review name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="newReview.Score" class="col-sm-2 control-label">Score</label>
+                <div class="col-sm-4">
+                    <input type="number" ng-required="true" class="form-control" ng-model="newReview.Score" id="newReview.Score" placeholder="Score">
+                </div>
+            </div>
+
+            <div class="form-group">
+                
+                    <input type="submit" ng-click="save()" value="Add" class="btn btn-default" />
+              
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
+<!DOCTYPE html>
+@*<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/scripts/angular.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <div ng-app="">
+        Angular JS Demo <br />
+        Input :  <input type="text" ng-model="helloworld" /><br />
+
+        {{//helloworld}}
+
+    </div>
+</body>
+</html>*@
